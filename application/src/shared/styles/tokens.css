@@ -1,0 +1,64 @@
+:root {
+  color-scheme: light;
+  --mist: #e8eee8;
+  --jade: #397a61;
+  --jade-soft: #d9e8dd;
+  --inkstone: #283a34;
+  --parchment: #faf8f1;
+  --old-gold: #aa8550;
+  --stone-light: #f4dda2;
+  --stone-deep: #b88c48;
+  --stone-edge: #96713b;
+  --stone-facet-left: #d2a65c;
+  --stone-facet-mid: #f2d88f;
+  --stone-facet-right: #bd8d45;
+  --river-slate: #788880;
+  --surface: #faf8f1;
+  --surface-raised: #ffffff;
+  --surface-muted: #edf1ec;
+  --text: #263a33;
+  --text-muted: #64746c;
+  --line: #d9e1d9;
+  --focus: #327658;
+  --danger: #a24945;
+  --success: #397a61;
+  --warning: #9b743f;
+  --font-ui: 'DM Sans Variable', 'Avenir Next', sans-serif;
+  --font-display: 'Noto Serif Variable', 'New York', Georgia, serif;
+  --radius-panel: 18px;
+  --radius-control: 11px;
+  --shadow-panel: 0 16px 42px rgba(38, 58, 51, .11), 0 2px 8px rgba(38, 58, 51, .06);
+  font-family: var(--font-ui);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --mist: #1b2825;
+  --jade: #8bc7a5;
+  --jade-soft: #30453b;
+  --inkstone: #e6ede7;
+  --parchment: #263531;
+  --old-gold: #d8b778;
+  --stone-light: #ffe4a0;
+  --stone-deep: #c3944b;
+  --stone-edge: #ddb86e;
+  --stone-facet-left: #d1a359;
+  --stone-facet-mid: #f5d98d;
+  --stone-facet-right: #bd8b3d;
+  --river-slate: #a5b3aa;
+  --surface: #263531;
+  --surface-raised: #2d3d37;
+  --surface-muted: #31423b;
+  --text: #e6ede7;
+  --text-muted: #b1beb5;
+  --line: #46564d;
+  --focus: #9cd3b1;
+  --danger: #e28d80;
+  --success: #9bd0ad;
+  --warning: #d8b778;
+  --shadow-panel: 0 18px 44px rgba(0, 0, 0, .26);
+}

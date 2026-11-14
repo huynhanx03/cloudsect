@@ -1,0 +1,48 @@
+.statistics-page { display: grid; gap: 13px; padding-bottom: 20px; }
+.statistics-toolbar { display: flex; align-items: center; gap: 8px; min-height: 43px; }
+.statistics-toolbar > label { width: 150px; }
+.statistics-toolbar .select-input { min-height: 35px; font-size: 11px; }
+.range-control { display: inline-flex; gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 11px; background: var(--surface); }
+.range-control button { min-height: 28px; padding: 0 10px; border: 0; border-radius: 8px; color: var(--text-muted); background: transparent; font-size: 10px; cursor: pointer; }
+.range-control button.is-active { color: var(--text); background: var(--surface-muted); font-weight: 650; }
+.export-button { min-height: 35px; margin-left: auto; padding-inline: 11px; font-size: 11px; }
+.stat-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.stat-metric { position: relative; display: grid; align-content: start; gap: 7px; min-height: 111px; padding: 14px 14px 12px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
+.stat-metric-primary { border-color: color-mix(in srgb, var(--jade) 44%, var(--line)); background: color-mix(in srgb, var(--jade-soft) 34%, var(--surface)); }
+.stat-metric-stone { background: color-mix(in srgb, var(--old-gold) 9%, var(--surface)); }
+.stat-icon { position: absolute; top: 13px; right: 13px; color: var(--river-slate); }
+.stat-metric-stone .stat-icon { color: var(--old-gold); }
+.stat-metric > small { max-width: 82%; color: var(--text-muted); font-size: 10px; }
+.stat-metric > strong { font: 550 clamp(18px, 2vw, 24px)/1.15 var(--font-display); font-variant-numeric: tabular-nums; }
+.stat-caption { color: var(--text-muted); font-size: 9px; }
+.statistics-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(280px, .9fr); gap: 12px; }
+.chart-panel, .quota-panel, .agent-stats-panel, .source-stats-panel { min-width: 0; padding: 16px; }
+.chart-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.chart-heading p { margin: 5px 0 0; color: var(--text-muted); font-size: 9px; }
+.chart-unit { display: inline-flex; align-items: center; gap: 5px; color: var(--text-muted); font-size: 10px; white-space: nowrap; }
+.usage-chart { width: 100%; height: 210px; margin-top: 8px; }
+.chart-empty { display: grid; height: 210px; place-items: center; color: var(--text-muted); font-size: 11px; }
+.quota-list { display: grid; gap: 12px; margin-top: 15px; }
+.quota-row { display: grid; gap: 7px; }
+.quota-row-top { display: flex; align-items: center; gap: 7px; font-size: 9px; }
+.quota-row-top > span:nth-child(2) { color: var(--text-muted); }
+.quota-row-top strong { margin-left: auto; font-size: 10px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.quota-unknown { color: var(--text-muted); }
+.quota-meter, .agent-bar-track { overflow: hidden; height: 6px; border-radius: 999px; background: var(--surface-muted); }
+.quota-meter i, .agent-bar-track i { display: block; height: 100%; border-radius: inherit; background: var(--jade); }
+.quota-row small, .quota-reason { margin: 0; color: var(--text-muted); font-size: 9px; }
+.agent-bars { display: grid; gap: 14px; margin-top: 18px; }
+.agent-bar-row { display: grid; grid-template-columns: minmax(100px, .8fr) minmax(80px, 1fr) minmax(55px, auto); align-items: center; gap: 9px; }
+.agent-bar-label { display: grid; grid-template-columns: 8px minmax(0,1fr); align-items: center; gap: 5px; }
+.agent-bar-label i { width: 7px; height: 7px; border-radius: 50%; }
+.agent-bar-label strong { overflow: hidden; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.agent-bar-label small { grid-column: 2; color: var(--text-muted); font-size: 9px; }
+.agent-bar-row > span { color: var(--text-muted); text-align: right; font-size: 9px; font-variant-numeric: tabular-nums; }
+.agent-bar-track i { min-width: 3px; }
+.source-stats-panel > .section-title-row { margin-bottom: 12px; }
+.source-stat-row { display: flex; align-items: center; justify-content: space-between; min-height: 32px; border-bottom: 1px solid var(--line); font-size: 10px; font-variant-numeric: tabular-nums; }
+.usage-breakdown { display: grid; gap: 6px; padding-top: 12px; }
+.usage-breakdown > div { display: flex; justify-content: space-between; gap: 8px; color: var(--text-muted); font-size: 9px; }
+.usage-breakdown strong { color: var(--text); font-size: 9px; font-variant-numeric: tabular-nums; }
+.statistics-disclaimer { display: flex; align-items: center; gap: 7px; margin: 0; color: var(--text-muted); font-size: 9px; }
+@media (max-width: 1050px) { .stat-metrics { grid-template-columns: repeat(2, minmax(0,1fr)); } .statistics-grid { grid-template-columns: 1fr; } }

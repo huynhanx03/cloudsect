@@ -1,0 +1,61 @@
+.boot-screen { display: grid; min-height: 100dvh; place-content: center; justify-items: center; gap: 12px; color: var(--text-muted); }
+.boot-screen h1 { margin: 0; color: var(--text); font: 500 26px var(--font-display); }
+.boot-screen p { margin: 0; }
+.boot-mark { display: grid; width: 52px; height: 52px; place-items: center; color: #fff; background: var(--jade); border-radius: 18px; }
+.session-total { display: inline-flex; align-items: baseline; gap: 6px; margin-right: 8px; color: var(--text-muted); font-size: 12px; }
+.session-total-count { color: var(--text); font: 500 19px var(--font-display); }
+.view-loading { height: 55vh; border-radius: 22px; background: linear-gradient(105deg, transparent 20%, color-mix(in srgb, var(--surface) 58%, transparent) 48%, transparent 72%); background-size: 220% 100%; animation: quiet-glint 1.7s ease-in-out infinite; }
+
+/* The sect is a navigable scene; its chrome floats over the world instead of boxing it in. */
+.app-shell.is-world-first { position: fixed; inset: 0; display: block; height: 100dvh; padding: 0; overflow: hidden; background: var(--mist); }
+.is-world-first .main-stage { position: absolute; inset: 0; overflow: hidden; border-radius: 0; background: var(--mist); }
+.is-world-first .section-head { display: none; }
+.is-world-first .content-scroll { position: absolute; inset: 0; height: auto; overflow: hidden; padding: 0; }
+.is-world-first .app-header { position: absolute; z-index: 8; top: 14px; right: 22px; left: 22px; height: 50px; padding: 0; pointer-events: none; }
+.is-world-first .app-header > * { pointer-events: auto; }
+.is-world-first .brand-lockup { min-width: auto; padding: 0 3px; }
+.is-world-first .brand-name { color: #293e3a; font-size: 20px; text-shadow: 0 1px 14px rgba(248, 252, 244, .85); }
+.is-world-first .brand-caption { color: #415c57; font-size: 10px; }
+.is-world-first .demo-pill { display: none; }
+.is-world-first .header-actions { gap: 7px; }
+.is-world-first .header-button, .is-world-first .icon-button, .is-world-first .stone-balance { border-color: rgba(255,255,255,.58); background: rgba(250, 251, 241, .74); box-shadow: 0 6px 20px rgba(45, 72, 74, .10); backdrop-filter: blur(12px); }
+.is-world-first .header-button:hover, .is-world-first .icon-button:hover, .is-world-first .stone-balance:hover { background: rgba(255,255,255,.94); }
+.is-world-first .stone-balance { min-width: 112px; gap: 5px; padding: 4px 10px 4px 5px; border-radius: 999px; }
+.is-world-first .stone-balance .spirit-stone-icon { width: 33px; height: 33px; object-fit: contain; }
+.is-world-first .stone-balance strong { font-size: 12px; }
+.is-world-first .stone-balance small { font-size: 9px; }
+.is-world-first .side-rail { position: absolute; z-index: 8; top: 50%; left: 18px; grid-row: auto; width: 54px; gap: 11px; padding: 10px 6px; transform: translateY(-50%); border: 1px solid rgba(255,255,255,.54); border-radius: 21px; background: rgba(248, 250, 239, .68); box-shadow: 0 12px 32px rgba(42, 68, 68, .13); backdrop-filter: blur(14px); }
+.is-world-first .rail-mark { width: 36px; height: 36px; border-radius: 13px; }
+.is-world-first .rail-divider { width: 28px; background: rgba(61, 89, 79, .19); }
+.is-world-first .rail-nav { gap: 4px; }
+.is-world-first .rail-button { width: 38px; height: 38px; border-radius: 13px; color: #526a61; }
+.is-world-first .rail-button:hover, .is-world-first .rail-button[aria-current='page'] { color: #275b46; background: rgba(220, 235, 220, .9); }
+.is-world-first .rail-bottom .icon-button { width: 38px; min-width: 38px; height: 38px; border-color: transparent; background: transparent; box-shadow: none; }
+.is-world-first.is-compact .side-rail, .is-world-first.is-compact .app-header .brand-lockup, .is-world-first.is-compact .app-header .demo-pill, .is-world-first.is-compact .header-actions .language-button, .is-world-first.is-compact .header-actions .stone-balance { display: none; }
+.is-world-first.is-compact .app-header { top: 9px; right: 10px; left: auto; }
+.is-world-first.is-compact .app-header .header-actions { gap: 5px; }
+.is-world-first.is-compact .app-header .header-actions .icon-button { width: 31px; min-width: 31px; height: 31px; }
+.is-world-first.is-compact .content-scroll, .is-world-first.is-compact .main-stage { height: 100%; }
+
+.is-compact .side-rail, .is-compact .app-header .brand-lockup, .is-compact .app-header .demo-pill, .is-compact .section-head, .is-compact .header-actions .language-button, .is-compact .header-actions .stone-balance { display: none; }
+.is-compact.app-shell { display: block; padding: 7px; }
+.is-compact .app-header { position: absolute; right: 14px; top: 12px; z-index: 8; }
+.is-compact .app-header .header-actions { gap: 5px; }
+.is-compact .app-header .header-actions .icon-button { width: 30px; height: 30px; }
+.is-compact .main-stage { height: 100%; }
+.is-compact .content-scroll { height: 100%; padding: 0; }
+.is-compact .sect-layout { display: block; height: 100%; }
+.is-compact .sect-world { height: 100%; min-height: 250px; }
+.is-compact .agent-inspector { display: none; }
+@keyframes quiet-glint { to { background-position: -200% 0; } }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+body:has(.app-shell.is-compact), html:has(.app-shell.is-compact), #root:has(.app-shell.is-compact) { min-width: 360px; }
+@media (max-width: 760px) {
+  .is-world-first .app-header { top: 10px; right: 10px; left: 84px; }
+  .is-world-first .brand-caption { display: none; }
+  .is-world-first .header-actions { gap: 4px; }
+  .is-world-first .stone-balance { min-width: 0; }
+  .is-world-first .stone-balance small { display: none; }
+  .is-world-first .side-rail { left: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { .view-loading { animation: none; } }

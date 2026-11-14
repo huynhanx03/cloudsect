@@ -1,0 +1,27 @@
+.session-detail { display: grid; align-content: start; gap: 15px; min-width: 0; }
+.session-detail-compact { gap: 11px; }
+.detail-topline { display: flex; align-items: center; gap: 7px; }
+.detail-topline .icon-button { margin-left: auto; border: 0; background: transparent; }
+.task-title { margin: 0; font: 500 19px/1.35 var(--font-display); overflow-wrap: anywhere; }
+.task-project { margin: -10px 0 0; color: var(--text-muted); font-size: 11px; }
+.detail-agent-row { display: flex; align-items: center; gap: 10px; min-width: 0; padding: 11px 0; border-block: 1px solid var(--line); }
+.robe-avatar { display: grid; flex: 0 0 auto; width: 37px; height: 37px; place-items: center; border-radius: 13px; color: white; background: var(--robe); font-family: var(--font-display); font-size: 17px; }
+.detail-agent-copy { display: grid; gap: 3px; min-width: 0; }
+.detail-agent-copy strong { overflow: hidden; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+.detail-agent-copy small { color: var(--text-muted); font-size: 10px; }
+.edit-agent { margin-left: auto; }
+.field-block { display: block; }
+.field-block .field-label { margin-bottom: 5px; }
+.field-block .select-input { min-height: 36px; font-size: 11px; }
+.detail-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 12px; border-radius: 13px; background: var(--surface-muted); }
+.detail-metrics > div { display: grid; gap: 5px; }
+.detail-metrics span { color: var(--text-muted); font-size: 10px; }
+.detail-metrics strong { font-size: 13px; font-weight: 650; }
+.token-breakdown { display: grid; gap: 8px; }
+.token-breakdown > div { display: flex; justify-content: space-between; gap: 8px; color: var(--text-muted); font-size: 10px; }
+.token-breakdown b { color: var(--text); font-size: 10px; font-variant-numeric: tabular-nums; }
+.token-breakdown small { color: var(--text-muted); font-size: 9px; }
+.data-note, .observed-note { margin: 0; color: var(--text-muted); font-size: 10px; line-height: 1.5; }
+.observed-note { padding-top: 8px; border-top: 1px solid var(--line); }
+.inline-edit { display: grid; gap: 6px; }
+.inline-edit > div { display: flex; justify-content: flex-end; }

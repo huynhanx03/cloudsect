@@ -1,0 +1,29 @@
+.field-error { color: var(--danger); font-size: 10px; }
+.field-hint { margin: 0; color: var(--text-muted); font-size: 10px; line-height: 1.5; }
+.settings-list { display: grid; }
+.settings-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 61px; border-bottom: 1px solid var(--line); }
+.settings-row:last-child { border-bottom: 0; }
+.settings-row > span { display: grid; gap: 3px; }
+.settings-row strong { font-size: 12px; }
+.settings-row small { color: var(--text-muted); font-size: 10px; }
+.settings-select { width: 140px; min-height: 35px; font-size: 11px; }
+.color-field { margin-top: 18px; }
+.color-swatches { display: flex; gap: 9px; flex-wrap: wrap; }
+.color-swatch { width: 29px; height: 29px; border: 2px solid var(--surface); border-radius: 50%; background: var(--swatch); box-shadow: 0 0 0 1px var(--line); cursor: pointer; }
+.color-swatch.is-selected { box-shadow: 0 0 0 2px var(--focus); }
+.field-hint { margin-top: 13px; }
+.treasury-balance { display: flex; align-items: center; gap: 12px; padding: 16px; border-radius: 16px; color: var(--old-gold); background: color-mix(in srgb, var(--old-gold) 12%, var(--surface)); }
+.treasury-balance > div:nth-child(2) { display: grid; gap: 2px; color: var(--text); }
+.treasury-balance > div:nth-child(2) strong { font: 600 24px var(--font-display); font-variant-numeric: tabular-nums; }
+.treasury-balance > div:nth-child(2) span { color: var(--text-muted); font-size: 10px; }
+.treasury-earned { display: flex; align-items: center; gap: 4px; margin-left: auto; color: var(--warning); font-size: 9px; }
+.treasury-rule { display: grid; grid-template-columns: 1fr 26px 1fr; align-items: center; justify-items: center; padding: 15px 6px; margin: 12px 0; border-bottom: 1px solid var(--line); font-size: 12px; font-variant-numeric: tabular-nums; }
+.treasury-rule .spirit-stone-icon { color: var(--old-gold); }
+.treasury-rule small { grid-column: 1 / 4; margin-top: 6px; color: var(--text-muted); font-size: 9px; }
+.ledger-list { display: grid; }
+.ledger-row { display: grid; grid-template-columns: 27px 1fr auto; align-items: center; gap: 8px; min-height: 55px; border-bottom: 1px solid var(--line); }
+.ledger-icon { display: grid; width: 26px; height: 26px; place-items: center; color: var(--old-gold); border-radius: 9px; background: color-mix(in srgb, var(--old-gold) 14%, var(--surface)); }
+.ledger-row > span:nth-child(2) { display: grid; gap: 4px; min-width: 0; }
+.ledger-row strong { overflow: hidden; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.ledger-row small { color: var(--text-muted); font-size: 9px; }
+.ledger-row b { color: var(--success); font-size: 11px; font-variant-numeric: tabular-nums; }

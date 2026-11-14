@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "revision": 1,
+  "mode": "demo",
+  "agents": [
+    { "id": "agent-moc-nghien", "name": "Mặc Nghiên", "title": "Trưởng lão", "robeColor": "#3d836c", "islandId": "island-moc-nghien", "avatarSeed": 19 },
+    { "id": "agent-xich-van", "name": "Xích Vân", "title": "Kiếm tu", "robeColor": "#b9794a", "islandId": "island-xich-van", "avatarSeed": 37 },
+    { "id": "agent-lan-nguyet", "name": "Lan Nguyệt", "title": "Chân truyền", "robeColor": "#766da4", "islandId": "island-lan-nguyet", "avatarSeed": 53 },
+    { "id": "agent-truc-anh", "name": "Trúc Ảnh", "title": "Chấp sự", "robeColor": "#68856a", "islandId": "island-truc-anh", "avatarSeed": 71 }
+  ],
+  "islands": [
+    { "id": "island-moc-nghien", "name": "Thanh Vân", "biome": "pine", "layoutSeed": 19, "order": 0 },
+    { "id": "island-xich-van", "name": "Xích Hà", "biome": "blossom", "layoutSeed": 37, "order": 1 },
+    { "id": "island-lan-nguyet", "name": "Tử Trúc", "biome": "bamboo", "layoutSeed": 53, "order": 2 },
+    { "id": "island-truc-anh", "name": "Linh Phong", "biome": "cloud", "layoutSeed": 71, "order": 3 }
+  ],
+  "sessions": [
+    { "id": "session-codex-router", "sourceId": "codex", "sourceSessionId": "demo-cx-001", "agentId": "agent-moc-nghien", "title": "Tách command router thành các domain nhỏ", "projectLabel": "cloudsect", "status": "working", "statusObservedAt": "2026-11-11T03:18:00Z", "areaId": "implementation", "startedAt": "2026-11-11T02:42:00Z", "usage": { "freshInput": "28460", "cachedInput": "17320", "output": "10480", "reasoningWithinOutput": "2140", "total": "56260", "availability": "available", "reason": null }, "activity": { "activeSeconds": 1800, "intervals": [{ "startedAt": "2026-11-11T02:42:00Z", "endedAt": "2026-11-11T03:12:00Z" }] }, "hidden": false },
+    { "id": "session-codex-tests", "sourceId": "codex", "sourceSessionId": "demo-cx-002", "agentId": "agent-moc-nghien", "title": "Rà soát luồng lưu cấu hình và lỗi khôi phục", "projectLabel": "cloudsect", "status": "awaiting_input", "statusObservedAt": "2026-11-11T03:08:00Z", "areaId": "council", "startedAt": "2026-11-11T02:51:00Z", "usage": { "freshInput": "12720", "cachedInput": "8600", "output": "4320", "reasoningWithinOutput": "900", "total": "25640", "availability": "available", "reason": null }, "activity": { "activeSeconds": 780, "intervals": [{ "startedAt": "2026-11-11T02:51:00Z", "endedAt": "2026-11-11T03:04:00Z" }] }, "hidden": false },
+    { "id": "session-claude-review", "sourceId": "claude", "sourceSessionId": "demo-cl-001", "agentId": "agent-xich-van", "title": "Đọc luồng đăng nhập và ghi chú rủi ro", "projectLabel": "identity-service", "status": "working", "statusObservedAt": "2026-11-11T03:17:00Z", "areaId": "research", "startedAt": "2026-11-11T02:57:00Z", "usage": { "freshInput": "43350", "cachedInput": "15100", "output": "18990", "reasoningWithinOutput": "6700", "total": "77440", "availability": "available", "reason": null }, "activity": { "activeSeconds": 1200, "intervals": [{ "startedAt": "2026-11-11T02:57:00Z", "endedAt": "2026-11-11T03:17:00Z" }] }, "hidden": false },
+    { "id": "session-claude-ui", "sourceId": "claude", "sourceSessionId": "demo-cl-002", "agentId": "agent-lan-nguyet", "title": "Phác thảo trạng thái rỗng cho màn thống kê", "projectLabel": "cloudsect", "status": "idle", "statusObservedAt": "2026-11-11T02:33:00Z", "areaId": "design", "startedAt": "2026-11-11T01:50:00Z", "usage": { "freshInput": "9200", "cachedInput": "3400", "output": "5400", "reasoningWithinOutput": "1800", "total": "18000", "availability": "available", "reason": null }, "activity": { "activeSeconds": 720, "intervals": [{ "startedAt": "2026-11-11T01:50:00Z", "endedAt": "2026-11-11T02:02:00Z" }] }, "hidden": false },
+    { "id": "session-gemini-idea", "sourceId": "gemini", "sourceSessionId": "demo-gm-001", "agentId": "agent-moc-nghien", "title": "Tìm cách bố trí các đảo ở màn hình rộng", "projectLabel": "cloudsect", "status": "working", "statusObservedAt": "2026-11-11T03:10:00Z", "areaId": "design", "startedAt": "2026-11-11T02:11:00Z", "usage": { "freshInput": "37700", "cachedInput": "11800", "output": "13200", "reasoningWithinOutput": "3100", "total": "62700", "availability": "available", "reason": null }, "activity": { "activeSeconds": 1620, "intervals": [{ "startedAt": "2026-11-11T02:11:00Z", "endedAt": "2026-11-11T02:38:00Z" }] }, "hidden": false },
+    { "id": "session-codex-research", "sourceId": "codex", "sourceSessionId": "demo-cx-003", "agentId": "agent-truc-anh", "title": "Đối chiếu định dạng event usage từ CLI", "projectLabel": "agent-research", "status": "interrupted", "statusObservedAt": "2026-11-11T01:24:00Z", "areaId": "research", "startedAt": "2026-11-11T00:38:00Z", "usage": { "freshInput": "18800", "cachedInput": "9200", "output": "7730", "reasoningWithinOutput": "1220", "total": "35730", "availability": "available", "reason": null }, "activity": { "activeSeconds": 960, "intervals": [{ "startedAt": "2026-11-11T00:38:00Z", "endedAt": "2026-11-11T00:54:00Z" }] }, "hidden": false },
+    { "id": "session-unassigned", "sourceId": "gemini", "sourceSessionId": "demo-ag-001", "agentId": null, "title": "Ghi chú khám phá giao diện cho phiên mới", "projectLabel": "scratch", "status": "unknown", "statusObservedAt": null, "areaId": "council", "startedAt": null, "usage": { "freshInput": null, "cachedInput": null, "output": null, "reasoningWithinOutput": null, "total": null, "availability": "unknown", "reason": "Chưa có dữ liệu usage từ nguồn." }, "activity": { "activeSeconds": null, "intervals": [] }, "hidden": false }
+  ],
+  "quotas": [
+    { "sourceId": "codex", "accountLabel": "Tài khoản đang dùng", "windowLabel": "5h", "remainingPercent": 72, "resetAt": "2026-11-11T05:00:00Z", "observedAt": "2026-11-11T03:15:00Z", "availability": "available", "reason": null },
+    { "sourceId": "codex", "accountLabel": "Tài khoản đang dùng", "windowLabel": "weekly", "remainingPercent": 41, "resetAt": "2026-11-15T00:00:00Z", "observedAt": "2026-11-11T03:15:00Z", "availability": "available", "reason": null },
+    { "sourceId": "claude", "accountLabel": "Tài khoản đang dùng", "windowLabel": "5h", "remainingPercent": 38, "resetAt": "2026-11-11T06:00:00Z", "observedAt": "2026-11-11T03:12:00Z", "availability": "available", "reason": null },
+    { "sourceId": "claude", "accountLabel": "Tài khoản đang dùng", "windowLabel": "weekly", "remainingPercent": 66, "resetAt": "2026-11-15T00:00:00Z", "observedAt": "2026-11-11T03:12:00Z", "availability": "available", "reason": null },
+    { "sourceId": "gemini", "accountLabel": "CLI telemetry", "windowLabel": "5h", "remainingPercent": null, "resetAt": null, "observedAt": "2026-11-11T03:03:00Z", "availability": "unknown", "reason": "Nguồn này không cung cấp quota." }
+  ],
+  "dailyUsage": [
+    { "id": "day-1", "date": "2026-11-05", "sourceId": "codex", "agentId": "agent-moc-nghien", "sessionId": "session-codex-router", "freshInput": "22600", "cachedInput": "11000", "output": "8700", "activeSeconds": 2640, "intervals": [{ "startedAt": "2026-11-05T01:00:00Z", "endedAt": "2026-11-05T01:44:00Z" }] },
+    { "id": "day-2", "date": "2026-11-05", "sourceId": "claude", "agentId": "agent-xich-van", "sessionId": "session-claude-review", "freshInput": "18700", "cachedInput": "6200", "output": "9200", "activeSeconds": 2100, "intervals": [{ "startedAt": "2026-11-05T01:28:00Z", "endedAt": "2026-11-05T02:03:00Z" }] },
+    { "id": "day-3", "date": "2026-11-06", "sourceId": "codex", "agentId": "agent-truc-anh", "sessionId": "session-codex-research", "freshInput": "19800", "cachedInput": "10300", "output": "9400", "activeSeconds": 2880, "intervals": [{ "startedAt": "2026-11-06T00:46:00Z", "endedAt": "2026-11-06T01:34:00Z" }] },
+    { "id": "day-4", "date": "2026-11-07", "sourceId": "gemini", "agentId": "agent-moc-nghien", "sessionId": "session-gemini-idea", "freshInput": "24600", "cachedInput": "9800", "output": "11200", "activeSeconds": 1860, "intervals": [{ "startedAt": "2026-11-07T02:10:00Z", "endedAt": "2026-11-07T02:44:00Z" }] },
+    { "id": "day-5", "date": "2026-11-08", "sourceId": "claude", "agentId": "agent-lan-nguyet", "sessionId": "session-claude-ui", "freshInput": "15400", "cachedInput": "4700", "output": "7400", "activeSeconds": 980, "intervals": [{ "startedAt": "2026-11-08T01:22:00Z", "endedAt": "2026-11-08T01:51:00Z" }] },
+    { "id": "day-6", "date": "2026-11-09", "sourceId": "codex", "agentId": "agent-moc-nghien", "sessionId": "session-codex-tests", "freshInput": "28200", "cachedInput": "14500", "output": "12300", "activeSeconds": 3720, "intervals": [{ "startedAt": "2026-11-09T00:50:00Z", "endedAt": "2026-11-09T01:52:00Z" }] },
+    { "id": "day-7", "date": "2026-11-10", "sourceId": "codex", "agentId": "agent-moc-nghien", "sessionId": "session-codex-router", "freshInput": "34200", "cachedInput": "21100", "output": "16800", "activeSeconds": 4620, "intervals": [{ "startedAt": "2026-11-10T01:08:00Z", "endedAt": "2026-11-10T02:25:00Z" }] },
+    { "id": "day-8", "date": "2026-11-11", "sourceId": "codex", "agentId": "agent-moc-nghien", "sessionId": "session-codex-router", "freshInput": "28460", "cachedInput": "17320", "output": "10480", "activeSeconds": 1800, "intervals": [{ "startedAt": "2026-11-11T02:42:00Z", "endedAt": "2026-11-11T03:12:00Z" }] },
+    { "id": "day-9", "date": "2026-11-11", "sourceId": "claude", "agentId": "agent-xich-van", "sessionId": "session-claude-review", "freshInput": "43350", "cachedInput": "15100", "output": "18990", "activeSeconds": 1200, "intervals": [{ "startedAt": "2026-11-11T02:57:00Z", "endedAt": "2026-11-11T03:17:00Z" }] },
+    { "id": "day-10", "date": "2026-11-11", "sourceId": "gemini", "agentId": "agent-moc-nghien", "sessionId": "session-gemini-idea", "freshInput": "37700", "cachedInput": "11800", "output": "13200", "activeSeconds": 1510, "intervals": [{ "startedAt": "2026-11-11T02:11:00Z", "endedAt": "2026-11-11T02:38:00Z" }] }
+  ],
+  "treasury": {
+    "balance": "1581",
+    "earned": "512",
+    "entries": [
+      { "id": "stone-opening", "createdAt": "2026-11-01T00:00:00Z", "description": "Linh thạch khởi nguyên", "stones": "1069", "kind": "opening" },
+    { "id": "stone-demo-week", "createdAt": "2026-11-11T03:20:00Z", "description": "512.500 lượt token đủ điều kiện · minh họa", "stones": "512", "kind": "earned" }
+    ]
+  },
+  "preferences": { "locale": "vi", "theme": "system", "motion": "system", "quality": "auto", "hiddenSessionIds": [] }
+}

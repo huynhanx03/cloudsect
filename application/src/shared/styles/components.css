@@ -1,0 +1,24 @@
+.status-badge { display: inline-flex; align-items: center; gap: 6px; width: fit-content; padding: 4px 8px; border-radius: 999px; background: var(--surface-muted); color: var(--text-muted); font-size: 10px; font-weight: 650; white-space: nowrap; }
+.status-badge i { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.status-working { color: #38775e; background: #e1eee5; }
+.status-awaiting_input { color: #946b35; background: #f4ead8; }
+.status-interrupted { color: #a04d47; background: #f4e5e1; }
+.status-idle { color: #69776f; }
+.status-unknown { color: #747b78; background: #e9ece9; }
+:root[data-theme='dark'] .status-working { color: #a1d6b2; background: #2d4b3a; }
+:root[data-theme='dark'] .status-awaiting_input { color: #e3c58d; background: #51432e; }
+:root[data-theme='dark'] .status-interrupted { color: #e7a197; background: #563732; }
+:root[data-theme='dark'] .status-unknown { color: #bec6c0; background: #414b46; }
+.source-badge { display: inline-flex; align-items: center; gap: 6px; color: var(--text-muted); font-size: 10px; font-weight: 650; white-space: nowrap; }
+.source-badge::before { content: ''; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--source-color); }
+.section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.section-title-row h2 { margin: 0; font: 550 16px/1.25 var(--font-display); }
+.spirit-stone-icon { display: inline-block; flex: 0 0 auto; color: var(--old-gold); filter: drop-shadow(0 1px 1px rgba(106, 75, 28, .16)); }
+.dialog-overlay { position: fixed; inset: 0; z-index: 20; background: rgba(21, 34, 29, .32); backdrop-filter: blur(3px); animation: veil-in .16s ease-out; }
+.dialog-content { position: fixed; top: 50%; left: 50%; z-index: 21; width: min(440px, calc(100vw - 32px)); max-height: calc(100vh - 48px); overflow: auto; transform: translate(-50%, -50%); border: 1px solid var(--line); border-radius: 21px; color: var(--text); background: var(--surface); box-shadow: var(--shadow-panel); }
+.dialog-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; padding: 20px 21px 15px; }
+.dialog-title { margin: 0; font: 550 21px/1.25 var(--font-display); }
+.dialog-description { display: block; margin-top: 6px; color: var(--text-muted); font-size: 12px; line-height: 1.5; }
+.dialog-body { padding: 3px 21px 20px; }
+.dialog-footer { display: flex; justify-content: flex-end; gap: 8px; padding: 13px 21px 19px; border-top: 1px solid var(--line); }
+@keyframes veil-in { from { opacity: 0; } to { opacity: 1; } }
